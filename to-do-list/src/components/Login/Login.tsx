@@ -72,10 +72,10 @@ export default function Login(props: any) {
             <div style={{ color: "red", fontSize: '1.15rem', fontWeight: '700' }}>{message}</div>
             <form onSubmit={tryLogin}>
               <label>Username: </label>
-              <input className={styles.inputs} type="text" onChange={handleChangeLogin} name="username" />
+              <input className={styles.inputs} type="text" onChange={handleChangeLogin} name="username" placeholder="your username"/>
               <br />
               <label>Password: </label>
-              <input className={styles.inputs} type="password" onChange={handleChangeLogin} name="password" />
+              <input className={styles.inputs} type="password" onChange={handleChangeLogin} name="password" placeholder="your password"/>
               <br />
               <button className={styles.btn}>Login</button>
             </form>
@@ -87,10 +87,10 @@ export default function Login(props: any) {
             <div style={{ color: "red", fontSize: '1.15rem', fontWeight: '700' }}>{message}</div>
             <form onSubmit={trySignUp}>
               <label>Username: </label>
-              <input className={styles.inputs} type="text" onChange={handleChangeSignUp} name="username" />
+              <input className={styles.inputs} type="text" onChange={handleChangeSignUp} name="username" placeholder="new username"/>
               <br />
               <label>Password: </label>
-              <input className={styles.inputs} type="password" onChange={handleChangeSignUp} name="password" />
+              <input className={styles.inputs} type="password" onChange={handleChangeSignUp} name="password" placeholder="new password"/>
               <br />
               <button className={styles.btn}>Sign Up</button>
             </form>

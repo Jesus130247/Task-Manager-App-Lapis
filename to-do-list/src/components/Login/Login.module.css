@@ -27,3 +27,16 @@
     color: black;
     box-shadow: 5px 5px #d4c53c7e;
 }
+
+@media (max-width: 500px) {
+    .login h1 {
+        font-size: 1.5rem;
+    }
+    .login h2 {
+        font-size: 1rem;
+    }
+    .btnCreate, .btn {
+        padding: 5px 10px;
+        font-size: 0.6rem;
+    }
+}

@@ -4,15 +4,7 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
     background-color: #f8f4e3;
-    color: #333333;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
-    flex-direction: column;
-    /* padding: 20px; */
 }
 
 .App {
@@ -113,13 +105,33 @@ form button:hover {
     background-color: #8d6e4b;
 }
 
-@media (max-width: 768px) {
-    .App {
-        grid-template-columns: 1fr; 
-        padding: 10px;
-        gap: 20px;
-    }
 
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    .App {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+    }
+    form {
+        gap: 2px;
+    }
+    form input, form select {
+        font-size: 0.5rem;
+    }
+    form label, p {
+        font-size: 0.7rem;
+    }
+    form button, p button {
+        padding: 5px 10px;
+        font-size: 0.6rem;
+    }
     .card {
         padding: 15px;
         width: 90%; 

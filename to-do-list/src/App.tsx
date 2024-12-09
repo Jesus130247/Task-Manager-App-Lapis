@@ -44,13 +44,19 @@ function  App() {
     ));
   };
 
-  const deleteCard = (id: number) => {
-    DeleteCard(id)
-    setCards(cards.filter(card => card.id !== id));
+  const deleteCard = (card_id: number) => {
+    DeleteCard(card_id)
+    setCards(cards.filter(card => card.id !== card_id));
   };
 
   return (
+    <>
+    <h1>Task Manager</h1>
     <div className="App">
+
+    <section className="login">
+        <Login user={user} setUser={setUser} setCards={setCards} />
+      </section>
 
       <section className="create-card-section">
         <h2>Create a New Card</h2>
@@ -64,7 +70,7 @@ function  App() {
           onStatusChange={updateCardStatus}
           onDelete={deleteCard}
           onUpdateCard={updateCardDetails} 
-        />
+          />
       </section>
 
       <section className="cards-section">
@@ -74,7 +80,7 @@ function  App() {
           onStatusChange={updateCardStatus}
           onDelete={deleteCard}
           onUpdateCard={updateCardDetails} 
-        />
+          />
       </section>
 
       <section className="cards-section">
@@ -84,14 +90,12 @@ function  App() {
           onStatusChange={updateCardStatus}
           onDelete={deleteCard}
           onUpdateCard={updateCardDetails} 
-        />
+          />
       </section>
 
-      <section className="login">
-        <Login user={user} setUser={setUser} setCards={setCards} />
-      </section>
 
     </div>
+  </>
   );
 }
 

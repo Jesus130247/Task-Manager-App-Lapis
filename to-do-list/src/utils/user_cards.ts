@@ -36,10 +36,12 @@ export async function updateCard(data: any) {
 
 export async function DeleteCard(card_id: number) {
     try {
-        const res = await axios.post(`/todolist/update/card/`, card_id) 
-        return res.data; 
+        const res = await axios.delete(`/todolist/delete/card/`, {
+            data: { card_id } 
+        });
+        return res.data;
     } catch (error) {
-        console.error("Error fetching cards:", error);
-        throw error; 
+        console.error("Error deleting card:", error);
+        throw error;
     }
 }

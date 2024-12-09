@@ -38,3 +38,28 @@
     white-space: normal; 
     margin-bottom: 10px; 
 }
+
+@media (max-width: 500px) {
+    .card h3 {
+        font-size: 0.8rem;
+    }
+    .card p {
+        font-size: 0.5rem;
+    }
+    .card {
+        margin: 0 auto;
+    }
+    .card {
+        gap: 2px;
+    }
+    .card input, .card select {
+        font-size: 0.5rem;
+    }
+    .card span, p {
+        font-size: 0.7rem;
+    }
+    .btnCreate, .btn {
+        padding: 5px 10px;
+        font-size: 0.6rem;
+    }
+}
