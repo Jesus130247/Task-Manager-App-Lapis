@@ -11,6 +11,6 @@ HTML/CSS, TypeScipt, JavaScript, React, Node.js, PostgreSQL, Vite, axios, expres
 User interface for managing cards, allows for creation, editing, moving between status', and deleting.
 
 Please note, it will take 50 seconds to spin up when launched for the first time in awhile, as it is hosted on Render.
-
+Website works best on google chrome.
 
 
