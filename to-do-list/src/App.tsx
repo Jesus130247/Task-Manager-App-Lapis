@@ -51,7 +51,7 @@ function  App() {
 
   return (
     <>
-    <h1>Task Manager</h1>
+    <h1>Ultimate Task Manager</h1>
     <div className="App">
 
     <section className="login">
