@@ -30,13 +30,13 @@
 
 @media (max-width: 500px) {
     .login h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .login h2 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .btnCreate, .btn {
         padding: 5px 10px;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 }
