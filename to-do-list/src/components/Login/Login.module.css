@@ -1,0 +1,29 @@
+.login h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+.login h2 {
+    font-size: 2rem;
+}
+.btn {
+    margin-top: 5px;
+    float: right;
+}
+
+.btnCreate, .btn {
+    padding: 10px 20px;
+    background-color: #6b4f3b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.inputs {
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: black;
+    box-shadow: 5px 5px #d4c53c7e;
+}
