@@ -5,7 +5,7 @@ The Ultimate Task Manager is an app designed to help users efficiently manage th
 Utilizes postgreSQL to store cards for users
 
 - Technologies:
-HTML/CSS, JavaScript, React, Node.js, PostgreSQL, Vite, axios, express, dotenv, bcrypt
+HTML/CSS, TypeScipt, JavaScript, React, Node.js, PostgreSQL, Vite, axios, express, dotenv, bcrypt
 
 - Features:
 User interface for managing cards, allows for creation, editing, moving between status', and deleting.
