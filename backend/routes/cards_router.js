@@ -14,6 +14,14 @@ router.get(`/todolist/user/cards/:user_id`, async (req, res, next) => {
     }
 });
 
+router.get('/todolist/card/nextVal', async (req, res, next) => {
+    try {
+        const nextId = await Cards.nextVal(); 
+        return res.json(nextId);     
+    } catch (err) {
+        next(err); 
+    }
+});
 
 router.post('/todolist/create/card/:user_id', async (req, res, next) => {
     const user_id = req.params.user_id
@@ -30,5 +38,6 @@ router.delete('/todolist/delete/card/', async (req, res, next) => {
     const card_id = req.body.card_id
     return Cards.deleteCard(card_id)
 })
+
 
 module.exports = router

@@ -45,3 +45,14 @@ export async function DeleteCard(card_id: number) {
         throw error;
     }
 }
+
+export async function nextVal() {
+    try {
+        const res = await axios.get(`/todolist/card/nextVal`);
+        console.log(res.data)
+        return res.data;
+    } catch (error) {
+        console.error("Error get value card:", error);
+        throw error;
+    }
+}

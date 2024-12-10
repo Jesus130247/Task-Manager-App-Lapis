@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './CreateCard.module.css';
-import { createCard } from '../../utils/user_cards';
+import { createCard, nextVal } from '../../utils/user_cards';
 
 export default function CreateCard({ addCard, user }: any) {
   const [title, setTitle] = useState('');
@@ -9,11 +9,12 @@ export default function CreateCard({ addCard, user }: any) {
   const [dueDate, setDueDate] = useState('');
   const [message, setMessage] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    let id = await nextVal()
     if (user) {
       const newCard = {
-        id: Date.now(),
+        id: Number(id)+1,
         title,
         description,
         status,

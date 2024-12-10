@@ -70,12 +70,20 @@ async function getCards(user_id) {
     return result.rows; 
 }
 
+async function nextVal() {
+    const sql = `SELECT nextval('todolist_cards_id_seq') AS next_id;`; 
+    const result = await db.query(sql);
+    return result.rows[0].next_id;  
+
+}
+
 
 const Cards = {
     createCard,
     deleteCard,
     editCard,
-    getCards
+    getCards,
+    nextVal
 }
 
 module.exports = Cards

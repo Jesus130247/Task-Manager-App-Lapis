@@ -22,7 +22,7 @@ export default function Card({ card, onStatusChange, onDelete, onUpdateCard }: C
 
   const handleStatusChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newStatus = e.target.value;
-    onStatusChange(card.id, newStatus); // Update status
+    onStatusChange(card.id, newStatus); 
   };
 
   const handleTitleClick = () => {
