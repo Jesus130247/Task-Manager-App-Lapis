@@ -21,7 +21,7 @@ router.post('/todolist/create/card/:user_id', async (req, res, next) => {
     return Cards.createCard(user_id, card_info)
 })
 
-router.post('/todolist/update/card/', async (req, res, next) => {
+router.put('/todolist/update/card/', async (req, res, next) => {
     const card_info = req.body
     return Cards.editCard(card_info)
 })

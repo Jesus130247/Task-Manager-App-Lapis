@@ -25,7 +25,7 @@ export async function getCardsFromDatabase(user_id: Text) {
 
 export async function updateCard(data: any) {
     try {
-        const res = await axios.post(`/todolist/update/card/`, data) 
+        const res = await axios.put(`/todolist/update/card/`, data) 
         return res.data; 
     } catch (error) {
         console.error("Error fetching cards:", error);
