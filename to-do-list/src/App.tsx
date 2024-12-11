@@ -54,12 +54,12 @@ function  App() {
     <h1>Ultimate Task Manager</h1>
     <div className="App">
 
-    <section className="login">
+      <section className="login">
         <Login user={user} setUser={setUser} setCards={setCards} />
       </section>
 
       <section className="create-card-section">
-        <h2>Create a New Card</h2>
+        <h2>Create</h2>
         <CreateCard addCard={addCard} user={user}/>
       </section>
 
@@ -84,7 +84,7 @@ function  App() {
       </section>
 
       <section className="cards-section">
-        <h2>Done</h2>
+        <h2>Completed</h2>
         <Cards
           cards={cards.filter(card => card.status === 'Completed')}
           onStatusChange={updateCardStatus}

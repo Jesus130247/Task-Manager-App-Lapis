@@ -12,6 +12,10 @@
     overflow: hidden; 
 }
 
+.card h3, .card p {
+    cursor: pointer;
+}
+
 .deleteButton {
     position: absolute;
     top: 10px;
